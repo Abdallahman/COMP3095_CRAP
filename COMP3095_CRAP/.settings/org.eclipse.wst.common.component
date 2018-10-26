@@ -5,6 +5,7 @@
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/servlets"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/functions"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/filters"/>
                 
         <property name="context-root" value="COMP3095_CRAP"/>
                 
