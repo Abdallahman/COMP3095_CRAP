@@ -27,8 +27,7 @@ public class AuthenticationFilter implements Filter {
 			throws IOException, ServletException {
 		// TODO Auto-generated method stub
 		HttpServletRequest request = (HttpServletRequest)arg0;
-	    if(request.getRequestURI().startsWith("/COMP3095_CRAP/login_Servlet") ||
-	    		          request.getRequestURI().startsWith("/COMP3095_CRAP/dashboard.jsp")) {
+	    if( request.getRequestURI().startsWith("/COMP3095_CRAP/dashboard.jsp")) {
 	    HttpSession session = request.getSession();
 	    if(session.getAttribute("username")==null) {
 	    	request.getRequestDispatcher("login.jsp").forward(request, arg1);
